@@ -5,7 +5,7 @@ output[63:0] out;
 reg[63:0] out;
 wire[31:0] in;
 
-always@(in)
+always@(in) per d-type and cb-type
 begin
     out[31:0] = in[31:0];
     out[63:32] = {32{in[31]}};

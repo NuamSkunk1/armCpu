@@ -11,7 +11,7 @@ module alu(
            assign CarryOut = tmp[64]; 
     always @(firstInput, secondInput, operation)
     begin
-        case(operation)
+        case(operation) base on table on book page 271
         4'b0000: 
            ALU_Result = firstInput + secondInput ; 
         4'b0001: 
