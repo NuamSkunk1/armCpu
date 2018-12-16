@@ -1,7 +1,7 @@
-module oc(clk);
+module oc(output reg clk);
 always@(*)
-	begin 
-		#100 clk = 1;
-		#100 clk = 0;
-	end 
+begin 
+	#100 clk = 1;
+	#100 clk = 0;
+end 
 endmodule 
